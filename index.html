@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plato Alpha</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- VUE IMPORT -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+        <!-- CSS IMPORTS -->
+        <link rel="stylesheet" href="./css/homepage/header.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- JAVASCRIPT IMPORTS -->
+        <script src="./js/navbar.js" defer></script>
+
+        <title>Plato Alpha</title>
+    </head>
+    <body>
+        <section id="showcase">
+            <header id="header" class="container">
+                <div id="app">
+                    <navbar id="navbar"></navbar>
+                </div>
+            </header>
+            <video
+                src="./assets/videos/homepage/header/altar-intro-small.mp4"
+                muted
+                loop
+                autoplay
+            ></video>
+
+            <div id="overlay"></div>
+            <div class="showcase-text">
+                <h3>We Are <span>Plato Alpha</span></h3>
+                <h2>Custom Product & Software Development Focused On Your Success</h2>
+                <button class="btn btn-call-lg">Book A Call</button>
+            </div>
+        </section>
+    </body>
 </html>

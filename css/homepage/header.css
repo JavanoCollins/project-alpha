@@ -1,0 +1,111 @@
+#showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100;
+    margin-top: 3rem;
+    z-index: 1000;
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+}
+
+#showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+#navbar button {
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+}
+
+.nav-link {
+    margin: 1rem;
+    font-size: 16px;
+    color: #fff;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        90deg,
+        rgb(0, 31, 99, 0.8) 0%,
+        rgb(0, 31, 99, 0.7) 25%,
+        rgb(0, 31, 99, 0.5) 50% ,
+        rgb(0, 31, 99, 0.3) 75%,
+        rgb(0, 31, 99, 0.1) 100%
+    );
+}
+
+
+.showcase-text {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    width: 1000px;
+    height: 100%;
+    margin-top: 6rem;
+}
+
+.showcase-text h3 {
+    font-size: 2rem;
+    font-family: Roboto;
+    margin-bottom: 10px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.showcase-text h3 span {
+    font-weight: bold;
+}
+
+.showcase-text h2 {
+    font-size: 5rem;
+    font-family: Roboto;
+    font-weight: 300;
+    line-height: 80px;
+    margin-bottom: 40px;
+}
+
+.showcase-text button {
+    text-transform: uppercase;
+    font-weight: bold;
+}
