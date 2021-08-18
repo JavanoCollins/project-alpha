@@ -2,8 +2,9 @@
 
 
 ## Colors
-Dark Blue: #0D42B2
+Dark Blue: rgb(0, 31, 99)
 Light Blue: #267CF1
+Light Gray: #8c8c8c
 
 ## Fonts
 
