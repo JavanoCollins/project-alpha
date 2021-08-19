@@ -6,15 +6,35 @@
     list-style: none;
 }
 
-#app {
+body {
+    font-family: 'Nexa Light';
+}
+
+@font-face {
+    font-family: 'Nexa Light';
+    src: url("../assets/fonts/Nexa\ Light.otf");
+}
+
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url("../assets/fonts/Nexa\ Bold.otf");
+}
+
+#navbar-component {
     width: 100%;
 }
 
 .btn {
     border: none;
+    transition: all .2s;
 }
 
-button {
+.btn:hover {
+    transform: scale(.95);
+    transition: all .2s;
+}
+
+button, i {
     cursor: pointer;
 }
 
@@ -24,7 +44,19 @@ button {
     border-radius: 5px;
     letter-spacing: .5px;
     color: #fff;
-    background-color: #267CF1;
+    background: linear-gradient(to right, #267CF1, rgb(0, 55, 173));
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-call-md {
+    padding: 14px;
+    border-radius: 5px;
+    letter-spacing: .5px;
+    color: #fff;
+    background: linear-gradient(to right, #267CF1, rgb(0, 55, 173));
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .btn-call-lg {
@@ -34,7 +66,9 @@ button {
     letter-spacing: 0px;
     border-radius: 5px;
     color: #fff;
-    background-color: #267CF1;
+    background: linear-gradient(to right, #267CF1, rgb(0, 55, 173));
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .container {

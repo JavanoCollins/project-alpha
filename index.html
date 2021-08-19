@@ -9,19 +9,27 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 
         <!-- CSS IMPORTS -->
-        <link rel="stylesheet" href="./css/homepage/header.css" />
         <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/homepage/header.css" />
+        <link rel="stylesheet" href="./css/homepage/footer.css" />
 
         <!-- JAVASCRIPT IMPORTS -->
         <script src="./js/navbar.js" defer></script>
+        <script src="./js/footer.js" defer></script>
+
+        <!-- FONT AWESOME -->
+        <script
+            src="https://kit.fontawesome.com/c34c8ba824.js"
+            crossorigin="anonymous"
+        ></script>
 
         <title>Plato Alpha</title>
     </head>
     <body>
-        <section id="showcase">
-            <header id="header" class="container">
-                <div id="app">
-                    <navbar id="navbar"></navbar>
+        <section id="showcase-section">
+            <header id="header" class="">
+                <div id="navbar-component">
+                    <navbar-component id="navbar"></navbar-component>
                 </div>
             </header>
             <video
@@ -34,9 +42,18 @@
             <div id="overlay"></div>
             <div class="showcase-text">
                 <h3>We Are <span>Plato Alpha</span></h3>
-                <h2>Custom Product & Software Development Focused On Your Success</h2>
+                <h2>
+                    Custom Product & Software Development Focused On Your
+                    Success
+                </h2>
                 <button class="btn btn-call-lg">Book A Call</button>
             </div>
+        </section>
+        <section id="footer-section">
+            <div id="footer-component">
+                <footer-component id="footer"></footer-component>
+            </div>
+
         </section>
     </body>
 </html>
