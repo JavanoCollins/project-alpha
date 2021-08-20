@@ -24,6 +24,14 @@ body {
     width: 100%;
 }
 
+.section-heading {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Nexa Bold";
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
 .btn {
     border: none;
     transition: all .2s;
@@ -31,7 +39,7 @@ body {
 
 .btn:hover {
     transform: scale(.95);
-    transition: all .2s;
+    transition: all .2s ease-out;
 }
 
 button, i {
@@ -72,6 +80,6 @@ button, i {
 }
 
 .container {
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }

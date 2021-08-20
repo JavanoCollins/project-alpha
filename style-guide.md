@@ -6,6 +6,12 @@ Dark Blue: rgb(0, 31, 99)
 Light Blue: #267CF1
 Light Gray: #8c8c8c
 
+Menu Item Background Hover: #0044FF
+
+# Section Background Colors
+White: #fff
+Light Gray: #F7F9FD
+
 # Footer Background Colors
 Footer 1: #21212B
 Footer 2: #1D1D25

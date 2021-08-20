@@ -2,7 +2,7 @@ Vue.component("footer-component", {
     template: `
         <footer class="">
                 <!-- FOOTER 1  -->
-                <div id="footer-1">
+                <div id="footer-1" class="container">
                     <div class="footer-1-col-1">
                         <img
                             id="footer-1-logo"
