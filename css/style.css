@@ -28,7 +28,6 @@ body {
     text-align: center;
     font-size: 48px;
     font-family: "Nexa Bold";
-    padding-top: 6rem;
     padding-bottom: 2rem;
 }
 
@@ -97,5 +96,6 @@ i {
 }
 
 section {
-    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }

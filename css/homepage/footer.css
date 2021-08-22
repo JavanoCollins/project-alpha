@@ -2,6 +2,10 @@ footer {
     font-family: "Nexa Light";
 }
 
+#footer-section {
+    padding-top: 0;
+}
+
 #footer-1 {
     padding: 6rem 6rem;
 }
