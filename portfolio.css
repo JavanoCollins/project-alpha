@@ -36,6 +36,10 @@ body {
     padding-bottom: 30px;
 }
 
+.gap {
+    padding-top: 200px;
+}
+
 hr {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -44,10 +48,10 @@ hr {
 }
 
 strong {
+    display: flex;
     background-color: #077bff81;
     font-size: 26px;
     color: #fff;
-    display: flex;
     width: 120px;
     padding: 2px;
 }
@@ -58,7 +62,7 @@ strong {
     color: white;
 }
 
-.tilt-holder {
+.screen-holder {
     width: 100% auto;
 }
 
@@ -143,7 +147,7 @@ strong {
     padding: 10px;
 }
 
-.btn-plato {
+.btn-limeade {
     padding: 10px;
 }
 
@@ -159,6 +163,74 @@ strong {
     text-transform: uppercase;
     font-size: 12px;
     margin-top: 68px;
+}
+
+
+/* LIMEADE IMAGES */
+
+.card-container {
+    display: flexbox;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.card-container img {
+    position: relative;
+    max-width: 350px;
+    border: none;
+    border-radius: 16px;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+images-container {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.lime-img {
+    margin-right: 150px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 150px 1fr;
+  }
+  
+  .child {
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 2;
+  }
+
+  .child-2 {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 50px 90px;
+    z-index: 1;
+  }
+
+  .child-3 {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: -100px 50px;
+    z-index: 0;
+  }
+
+  .limeParent-hover:hover {
+    opacity: 0;
+  }
+  
+
+.limeParent-hover {
+    z-index: 4;
+    vertical-align: top;
+    transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.3\5s ease;
+    opacity: 1;
 }
 
 /* SIX N FOUR */
@@ -196,15 +268,17 @@ strong {
 }
 
 .text-description-sixfour {
+    display: block;
     align-items: center;
+    text-align: right;
     margin-bottom: 30px 0px;
     color: #8c8c8c;
 }
 
-.text-align-right {
+/* .text-align-right {
     display: block;
     align-items: center;
-}
+} */
 
 .sixfour{ 
     display: flex;
@@ -212,6 +286,96 @@ strong {
     align-items: center;
     text-align: right;
 }
+
+.btn-sixfour {
+    padding: 10px;
+    margin-top: -40px;
+    display: flex;
+    float: right;
+}
+
+.btn-color--primary {
+    border: solid #077aff;
+    color: #077aff;
+}
+
+.btn-fill--outline {
+    border-radius: 3px;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+
+/* SIX N FOUR IMAGES */
+
+.card-container {
+    display: flexbox;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.card-container img {
+    position: relative;
+    max-width: 350px;
+    border: none;
+    border-radius: 16px;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+images-container {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.sixfour-img {
+    margin-right: 150px;
+}
+
+.sixfour-parent {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 150px 1fr;
+  }
+  
+  .sixfour-child {
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 2;
+  }
+
+  .sixfour-child-2 {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 50px 90px;
+    z-index: 1;
+  }
+
+  .sixfour-child-3 {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: -100px 50px;
+    z-index: 0;
+  }
+
+  .parent-hover:hover {
+    opacity: 0;
+  }
+  
+
+.parent-hover {
+    z-index: 4;
+    vertical-align: top;
+    transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
 
 /* TEAM */
 
