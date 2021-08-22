@@ -36,6 +36,7 @@
     color: #267cf1;
     text-align: center;
 }
+
 .services {
     display: grid;
     grid-template-columns: repeat(2, 550px);
