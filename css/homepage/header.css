@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background: #111; */
+    background-color: #f7f9fd;
     transition: 0.5s;
     z-index: 2;
 }
@@ -17,7 +17,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100;
+    /* height: 100%; */
     margin-top: 1rem;
     z-index: 1000;
     display: flex;

@@ -1,12 +1,19 @@
 ### Layout ###
 
 
+<<<<<<< HEAD
 ### Colors ###
 Dark Blue: rgb(0, 31, 99)
 Light Blue: #267CF1
 Light Gray: #8c8c8c
 
 Menu Item Background Hover: #0044FF
+=======
+## Colors
+Dark Blue: rgb(0, 31, 99)
+Light Blue: #267CF1
+Light Gray: #8c8c8c
+>>>>>>> 947e54b48189055d28d284bebfff3996caba71cd
 
 # Section Background Colors
 White: #fff

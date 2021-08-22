@@ -4,31 +4,18 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background-color: #f7f9fd;
 }
 
-.client-section-container {
-    padding-bottom: 3rem;
-}
 
 #client-section h2 {
 }
 
-#client-section p {
-    text-align: center;
-    font-size: 26px;
-    width: 65%;
-    margin: 0 auto;
-    line-height: 40px;
-}
 
 .clients-img-container {
     display: grid;
     grid-template-columns: repeat(3, 25px);
     justify-content: center;
     justify-items: center;
-    margin-top: 3rem;
-    margin-bottom: 4rem;
     align-items: center;
     grid-column-gap: 350px;
     grid-row-gap: 10px;
