@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./assets/favicon.ico"
+            type="image/x-icon"
+        />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+        <!-- VUE IMPORT -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 
-    <!-- VUE IMPORT -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <!-- CSS IMPORTS -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/homepage/clients.css" />
+        <link rel="stylesheet" href="./css/homepage/header.css" />
+        <link rel="stylesheet" href="./css/homepage/footer.css" />
 
-    <!-- CSS IMPORTS -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/homepage/clients.css" />
-    <link rel="stylesheet" href="./css/homepage/header.css" />
-    <link rel="stylesheet" href="./css/homepage/footer.css" />
+        <!-- JAVASCRIPT IMPORTS -->
+        <script src="./js/navbar.js" defer></script>
+        <script src="./js/footer.js" defer></script>
+        <script src="./js/homepage/header.js" defer></script>
 
-    <!-- JAVASCRIPT IMPORTS -->
-    <script src="./js/navbar.js" defer></script>
-    <script src="./js/footer.js" defer></script>
-    <script src="./js/homepage/header.js" defer></script>
+        <!-- FONT AWESOME -->
+        <script
+            src="https://kit.fontawesome.com/c34c8ba824.js"
+            crossorigin="anonymous"
+        ></script>
 
-    <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/c34c8ba824.js" crossorigin="anonymous"></script>
+        <title>Plato Alpha</title>
+    </head>
 
-    <title>Plato Alpha</title>
-</head>
-
-<body>
-    <section id="showcase-section" class="container">
-        <header id="header" class="">
-            <nav id="navbar" class="container">
-                <a href="../index.html">
-                    <img id="logo" src="../assets/img/home_page/header/logo.png" alt="Plato Alpha Logo" width="200" /></a>
-                <div class="nav-links">
-                    <nav-link link="Work"></nav-link>
-                    <nav-link link="Services" dropdown="true"></nav-link>
-                    <nav-link link="About"></nav-link>
-                    <nav-link link="Clients"></nav-link>
-                </div>
-
-                </div>
-            </nav>
-            <!-- <nav id="navbar">
+    <body>
+        <section id="showcase-section" class="container">
+            <header id="header" class="">
+                <nav id="navbar" class="container">
+                    <a href="../index.html">
+                        <img
+                            id="logo"
+                            src="../assets/img/home_page/header/logo.png"
+                            alt="Plato Alpha Logo"
+                            width="200"
+                    /></a>
+                    <div class="nav-links">
+                        <nav-link link="Work"></nav-link>
+                        <nav-link link="Services" dropdown="true"></nav-link>
+                        <nav-link link="About"></nav-link>
+                        <nav-link link="Clients"></nav-link>
+                    </div>
+                </nav>
+                <!-- <nav id="navbar">
                     <a href="../index.html">
                         <img
                             id="logo"
@@ -112,40 +121,46 @@
                         <button class="btn btn-call-sm">Book A Call</button>
                     </div>
                 </nav> -->
-        </header>
-        <video src="./assets/videos/homepage/header/altar-intro-small.mp4" muted loop autoplay></video>
+            </header>
+            <video
+                src="./assets/videos/homepage/header/altar-intro-small.mp4"
+                muted
+                loop
+                autoplay
+            ></video>
 
-        <div id="overlay"></div>
-        <div class="showcase-text">
-            <h3>We Are <span>Plato Alpha</span></h3>
-            <h2>
-                Custom Product & Software Development Focused On Your
-                Success
-            </h2>
-            <button class="btn btn-call-lg">Book A Call</button>
-        </div>
-    </section>
-
-    <!-- MAIN SECTION -->
-    <main>
-        <!-- CLIENT SECTION -->
-        <section id="client-section" class="container">
-            <div class="client-section-container">
-                <h2 class="section-heading">Clients</h2>
-                <p>
-                    We have been blessed with the opportunity to work with
-                    esteemed companies across a wide spectrum of industries
-                    and geographies.
-                </p>
-                <div class="clients-img-container"></div>
+            <div id="overlay"></div>
+            <div class="showcase-text">
+                <h3>We Are <span>Plato Alpha</span></h3>
+                <h2>
+                    Custom Product & Software Development Focused On Your
+                    Success
+                </h2>
+                <button class="btn btn-call-lg">Book A Call</button>
             </div>
         </section>
-    </main>
-    <section id="footer-section">
-        <div id="footer-component">
-            <footer-component id="footer"></footer-component>
-        </div>
-    </section>
-</body>
 
+        <!-- MAIN SECTION -->
+        <main>
+            <!-- CLIENT SECTION -->
+            <section id="client-section" class="container">
+                <div class="client-section-container">
+                    <h2 class="section-heading">Clients</h2>
+                    <p>
+                        We have been blessed with the opportunity to work with
+                        esteemed companies across a wide spectrum of industries
+                        and geographies.
+                    </p>
+                    <div class="clients-img-container"></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <section id="footer-section">
+            <div id="footer-component">
+                <footer-component id="footer"></footer-component>
+            </div>
+        </section>
+    </body>
 </html>

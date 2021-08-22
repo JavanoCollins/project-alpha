@@ -1,15 +1,16 @@
 const clientsImgContainer = document.querySelector(".clients-img-container");
 
 const clientImages = [
-    "sixnfour.png",
-    "limeade.png",
-    "edls-logo.svg",
-    "peepx.png",
-    "bahamas-government.png",
-    "rev.png",
-    "jll.png",
+    "sixnfour",
+    "limeade",
+    "edls-logo",
+    "bahamas-government",
+    "rev",
+    "jll",
+    "peepx",
 ];
 
+// Render client logo images to the client section
 clientImages.map((img) => {
-    return clientsImgContainer.innerHTML += `<img class="client-img" src="../../assets/img/home_page/clients/${img}">`
+    return clientsImgContainer.innerHTML += `<img class="client-img ${img}" src="../../assets/img/home_page/clients/${img}.png">`
 })

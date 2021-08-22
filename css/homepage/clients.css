@@ -30,12 +30,21 @@
     margin-top: 3rem;
     margin-bottom: 4rem;
     align-items: center;
-    grid-column-gap: 400px;
-    grid-row-gap: 70px;
+    grid-column-gap: 350px;
+    grid-row-gap: 10px;
 }
 
 .client-img {
     width: 180px;
     filter: grayscale(100%);
     /* margin: 1rem; */
+}
+
+.peepx {
+    width: 150px;
+}
+
+.edls-logo, 
+.bahamas-government {
+    width: 250px;
 }
