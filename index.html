@@ -5,8 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plato Alpha</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+	$('.vid-slider .vid').on('click', function() {
+  // get required DOM Elements
+  var iframe_src = $(this).children('iframe').attr('src'),
+        iframe = $('.video-popup'),
+        iframe_video = $('.video-popup iframe'),
+        close_btn = $('.close-video');
+        iframe_src = iframe_src + '?autoplay=1&rel=0'; // for autoplaying the popup video
+        
+  // change the video source with the clicked one
+  $(iframe_video).attr('src', iframe_src);
+  $(iframe).fadeIn().addClass('show-video');
+		
+  // remove the video overlay when clicking outside the video
+  $(document).on('click', function(e) {
+    if($(iframe).is(e.target) || $(close_btn).is(e.target)) {
+    $(iframe).removeClass('show-video');
+    $(iframe_video).attr('src', '');
+  }
+		});
+		
+	});
+  
+});</script>
+<script src="https://kit.fontawesome.com/3258bb477e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="vid-slider">
+        <div class="vid-wrapper">
+        <div class="vid item">
+        
+                <iframe width="500" height="400" src="https://www.youtube.com/embed/syVIFG8Mv-A?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        
+    </div>
+        
+    <div style="font-size: 24px;"><i class="fas fa-quote-left fa-2x"></i></div>
+       <section></section>
+       <p style="color:black; font-size: 25px;">We are very happy to work with Altar.io. The collaboration goes far beyond a standard IT service: with Altar.io we have a sparring partner that challenges us in our product decisions and is truly passionate about the results developed. The level of professionalism and dedication is exceptional in this industry and we are eager to strengthen our collaboration in the future.</p>
+      <strong>Philip Schoch</strong><hl>-Apiax, Co-Founder</h1> <div class="plato-alpha-ark.png" onclick="window.location.href=https://youtube.com "></div>
+    
+    
+         </div>
+        </div>
+        <div class="video-popup">
+        <div class="iframe-wrapper"><iframe width="500" height="400" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <span class="close-video"></span>
+        </div>
+        </div>
+        <style>
+   .vid-wrapper {
+    text-align: left;
+    color: blue;
+    font-family: serif;
+    padding: 20px;
+    }
+    
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+    
+    .vid {
+    display: block;
+    float: left;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    
+    }
+    
+    .vid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    }
+    
+    .h2 {
+    font-size: 20px;
+    color: rgb(18, 26, 143);
+    }
+    
+    /* Video Popup */
+    .video-popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 998;
+    background: rgba(0, 0, 0, .7);
+    cursor: pointer;
+    display: none !important;
+    }
+    
+    .video-popup.show-video {
+    display: flex !important;
+    }
+    
+    .iframe-wrapper {
+    position: relative;
+    }
+    
+    .iframe-wrapper .close-video {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -20px;
+    right: 0;
+    background: url(https://image.flaticon.com/icons/svg/149/149690.svg) #fff;
+    border-radius: 50%;
+    background-size: cover;
+    }
+        </style>
+    </body>
+        
+        
     
 </body>
 </html>
