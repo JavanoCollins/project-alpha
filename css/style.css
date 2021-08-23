@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Nexa Light";
+}
+
+@font-face {
+    font-family: "Nexa Light";
+    src: url("../assets/fonts/Nexa\ Light.otf");
+}
+
+@font-face {
+    font-family: "Nexa Bold";
+    src: url("../assets/fonts/Nexa\ Bold.otf");
+}
+
+#navbar-component {
+    width: 100%;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Nexa Bold";
+    padding-bottom: 2rem;
+}
+
+.btn {
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    transform: scale(0.95);
+    transition: all 0.2s ease-out;
+}
+
+button,
+i {
+    cursor: pointer;
+}
+
+.btn-call-sm {
+    padding: 10px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    background: linear-gradient(to right, #267cf1, rgb(0, 55, 173));
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-call-md {
+    padding: 14px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    background: linear-gradient(to right, #267cf1, rgb(0, 55, 173));
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-call-lg {
+    padding: 16px 16px;
+    width: 200px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    border-radius: 5px;
+    color: #fff;
+    background: linear-gradient(to right, #267cf1, rgb(0, 55, 173));
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 26px;
+    width: 65%;
+    margin: 0 auto 3rem;
+    line-height: 40px;
+}
+.container {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+
+.section-bg-alt {
+    background-color: #f7f9fd;
+}
+
+section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
