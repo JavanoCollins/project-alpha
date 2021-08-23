@@ -9,444 +9,50 @@
             href="./assets/favicon.ico"
             type="image/x-icon"
         />
-
-        <!-- VUE IMPORT -->
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-
         <!-- CSS IMPORTS -->
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/homepage/clients.css" />
-        <link rel="stylesheet" href="./css/homepage/header.css" />
-        <link rel="stylesheet" href="./css/homepage/services.css" />
-        <link rel="stylesheet" href="./css/homepage/weareplato.css" />
         <link rel="stylesheet" href="./css/homepage/portfolio.css" />
-        <link rel="stylesheet" href="./css/homepage/footer.css" />
 
-        <!-- JAVASCRIPT IMPORTS -->
-        <script src="./js/navbar.js" defer></script>
-        <script src="./js/footer.js" defer></script>
-        <script src="./js/homepage/header.js" defer></script>
-        <script src="./js/homepage/portfolio.js" defer></script>
-
-        <!-- FONT AWESOME -->
-        <script
-            src="https://kit.fontawesome.com/c34c8ba824.js"
-            crossorigin="anonymous"
-        ></script>
-
-        <!-- JQUERY -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="./js/homepage/weareplato.js"></script>
+        <!-- GSAP IMPORT -->
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
 
         <title>Plato Alpha</title>
     </head>
-
     <body>
-        <!-- HEADER SECTION -->
-        <section id="showcase-section" class="container">
-            <header id="header" class="">
-                <nav id="navbar" class="container">
-                    <a href="../index.html">
-                        <img
-                            id="logo"
-                            src="../assets/img/home_page/header/logo.png"
-                            alt="Plato Alpha Logo"
-                            width="200"
-                    /></a>
-                    <div class="nav-links">
-                        <nav-link link="work" title="Work"></nav-link>
-                        <nav-link
-                            link="services"
-                            title="Services"
-                            dropdown="true"
-                        ></nav-link>
-                        <nav-link link="about" title="About"></nav-link>
-                        <nav-link link="clients" title="Clients"></nav-link>
-                        <button class="btn btn-call-sm">Book A Call</button>
-                    </div>
-                    <div class="dropdown-content"></div>
-                </nav>
-            </header>
-            <video
-                src="./assets/videos/homepage/header/altar-intro-small.mp4"
-                muted
-                loop
-                autoplay
-            ></video>
+        <!-- PORTFOLIO SECTION -->
+        <!-- Limeade -->
 
-            <div id="overlay"></div>
-            <div class="showcase-text">
-                <h3>We Are <span>Plato Alpha</span></h3>
-                <h2>
-                    Custom Product & Software Development Focused On Your
-                    Success
-                </h2>
-                <button class="btn btn-call-lg">Book A Call</button>
+        <div class="container">
+            <div class="limeade-img-container portfolio-img-container">
+                <img
+                    class="limeade-img-1"
+                    src="./assets/img/home_page/portfolio/limeade/limeade_screen_1.png"
+                />
+                <img
+                    class="limeade-img-2"
+                    src="./assets/img/home_page/portfolio/limeade/limeade_screen_2.png"
+                />
+                <img
+                    class="limeade-img-3"
+                    src="./assets/img/home_page/portfolio/limeade/limeade_screen_3.png"
+                />
             </div>
-        </section>
 
-        <!-- MAIN SECTION -->
-        <main>
-            <!-- SERVICES SECTION -->
-            <section id="services-section" class="services-section container section-bg-alt">
-                <div class="header-paragraph">
-                    <h2 class="section-heading">Services</h2>
-                    <p class="section-description">
-                        We can help you bring your product to life - whether
-                        it's a Minimum Viable Product, UX/UI Services or help to
-                        scale your company
-                    </p>
-                </div>
-                <div class="services">
-                    <div class="card">
-                        <div class="icon">
-                            <i class="fab fa-uncharted"></i>
-                        </div>
-                        <h1>Software Solutions</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Delectus excepturi minus atque dolores harum
-                            deleniti molestiae, dolore sunt impedit voluptate.
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <div class="icon">
-                            <i class="fas fa-drafting-compass"></i>
-                        </div>
-                        <h1>Website Design</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Delectus excepturi minus atque dolores harum
-                            deleniti molestiae, dolore sunt impedit voluptate.
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <div class="icon">
-                            <i class="fas fa-wrench"></i>
-                        </div>
-                        <h1>Maintenance</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Delectus excepturi minus atque dolores harum
-                            deleniti molestiae, dolore sunt impedit voluptate.
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <div class="icon">
-                            <i class="fas fa-money-check-alt"></i>
-                        </div>
-                        <h1>E-commerce</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Delectus excepturi minus atque dolores harum
-                            deleniti molestiae, dolore sunt impedit voluptate.
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <div class="icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h1>System Integration</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Delectus excepturi minus atque dolores harum
-                            deleniti molestiae, dolore sunt impedit voluptate.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- WE ARE PLATO ALPHA -->
-            <section id="weareplato-section">
-                <div class="vid-slider">
-                    <div class="vid-wrapper">
-                        <div class="vid item">
-                            <iframe
-                                width="500"
-                                height="400"
-                                src="https://www.youtube.com/embed/syVIFG8Mv-A?controls=0"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-
-                        <div style="font-size: 24px">
-                            <i class="fas fa-quote-left fa-2x"></i>
-                        </div>
-                        <section></section>
-                        <p style="color: black; font-size: 25px">
-                            We are very happy to work with Altar.io. The
-                            collaboration goes far beyond a standard IT service:
-                            with Altar.io we have a sparring partner that
-                            challenges us in our product decisions and is truly
-                            passionate about the results developed. The level of
-                            professionalism and dedication is exceptional in
-                            this industry and we are eager to strengthen our
-                            collaboration in the future.
-                        </p>
-                        <strong>Philip Schoch</strong>
-                        <h2>-Apiax, Co-Founder</h2>
-                        <div class=""></div>
-                    </div>
-                </div>
-                <div class="video-popup">
-                    <div class="iframe-wrapper">
-                        <iframe
-                            width="500"
-                            height="400"
-                            src=""
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                        ></iframe>
-                        <span class="close-video"></span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CLIENT SECTION -->
-            <section id="client-section" class="container section-bg-alt">
-                <div class="client-section-container">
-                    <h2 class="section-heading">Clients</h2>
-                    <p class="section-description">
-                        We have been blessed with the opportunity to work with
-                        esteemed companies across a wide spectrum of industries
-                        and geographies.
-                    </p>
-                    <div class="clients-img-container"></div>
-                </div>
-            </section>
-
-            <!-- PORTFOLIO SECTION -->
-            <section id="portfolio-section">
-                <h1 class="section-heading">Portfolio</h1>
-                <p class="section-description">
-                    We are proud to work with truly innovative clients. <br />
-                    Here are just a few of the companies we’ve had the privilege
-                    to work with.
-                </p>
-
-                <!-- Limeade -->
-                <div class="section-gap">
-                    <div class="container-limeade">
-                        <div class="row align-items-center">
-                            <div class="align-items-start">
-                                <h6 class="text-limeade font-weight-600">
-                                    Limeade
-                                </h6>
-                                <h3 class="subtext-limeade font-weight-600">
-                                    Year Round Beverage
-                                </h3>
-                                <p class="text-description font-weight-400">
-                                    In every bottle of limeade there are limes
-                                    that were handpicked and locally grown.
-                                    Agriculture is an integral and integrated
-                                    part of The Bahamas' history and we are
-                                    honored to pay homage to that history by
-                                    bottling that very essence. The end product
-                                    epitomizes "All Things Bahamian".
-                                    <br /><br />
-                                    An explosion of palpable fruity flavors that
-                                    hydrate the palate and gives you a taste of
-                                    Bahamian culture found in every bottle of
-                                    Limeade beverages; a modified and better
-                                    alternative to the household beverage of
-                                    home-made freshly squeezed limeade.
-                                </p>
-                                <a
-                                    href="https://limeadebahamas.com/"
-                                    class="
-                                        btn-limeade
-                                        btn-fill--outline
-                                        btn-color--primary
-                                        text-uppercase
-                                    "
-                                    >See Limeade</a
-                                >
-                            </div>
-                            <div
-                                class="align-items-start justify-content-center"
-                            >
-                                <div class="screen-holder card images">
-                                    <div
-                                        class="card-container images-container"
-                                    >
-                                        <div class="lime-img parent">
-                                            <img
-                                                class="child"
-                                                src="./portfolio-images/limeade/limeade_screen_1.png"
-                                            />
-                                            <img
-                                                class="child-2"
-                                                src="./portfolio-images/limeade/limeade_screen_2.png"
-                                            />
-                                            <img
-                                                class="child-3"
-                                                src="./portfolio-images/limeade/limeade_screen_3.png"
-                                            />
-                                            <div class="limeParent-hover">
-                                                <p class="hover-me">Hover Me</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Six N' Four -->
-                <div class="section-gap gap">
-                    <div class="container-sixfour">
-                        <div class="row align-items-center">
-                            <div
-                                class="align-items-start justify-content-center"
-                            >
-                                <div class="screen-holder card images">
-                                    <div
-                                        class="card-container images-container"
-                                    >
-                                        <div class="sixfour-img sixfour-parent">
-                                            <img
-                                                class="sixfour-child"
-                                                src="./portfolio-images/sixnfour/sixfour_screen_1.png"
-                                            />
-                                            <img
-                                                class="sixfour-child-2"
-                                                src="./portfolio-images/sixnfour/sixfour_screen_2.png"
-                                            />
-                                            <img
-                                                class="sixfour-child-3"
-                                                src="./portfolio-images/sixnfour/sixfour_screen_3.png"
-                                            />
-                                            <div class="parent-hover">
-                                                <p class="hover-me">Hover Me</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="align-items-start">
-                                <h6 class="text-sixfour font-weight-600">
-                                    Six N' Four
-                                </h6>
-                                <h3 class="subtext-sixfour font-weight-600">
-                                    Authentic Bahamian Food
-                                </h3>
-                                <p
-                                    class="
-                                        text-description-sixfour
-                                        font-weight-400
-                                    "
-                                >
-                                    Being Bahamian means many things to many
-                                    people – from our distinct dialect and
-                                    vocabulary to our unique history as the
-                                    gateway to the new world – whatever your
-                                    interpretation is, it is undeniable that a
-                                    certain spirit existing within these 700
-                                    islands and cays that flows through all of
-                                    us that proudly proclaim “it’s better in The
-                                    Bahamas.”
-                                </p>
-                                <a
-                                    href="https://sixnfour.com/"
-                                    class="
-                                        btn-sixfour
-                                        btn-fill--outline
-                                        btn-color--primary
-                                        text-uppercase
-                                    "
-                                    >See Six N' Four</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- FOOTER -->
-        <section id="footer-section">
-            <div id="footer-component">
-                <footer-component id="footer"></footer-component>
+            <div class="sixnfour-img-container portfolio-img-container">
+                <img
+                    class="sixnfour-img-1"
+                    src="./assets/img/home_page/portfolio/sixnfour/sixfour_screen_1.png"
+                />
+                <img
+                    class="sixnfour-img-2"
+                    src="./assets/img/home_page/portfolio/sixnfour/sixfour_screen_2.png"
+                />
+                <img
+                    class="sixnfour-img-3"
+                    src="./assets/img/home_page/portfolio/sixnfour/sixfour_screen_3.png"
+                />
             </div>
-        </section>
+        </div>
+
+        <script src="./js/homepage/portfolio.js"></script>
     </body>
 </html>
-<!-- 
-    <div class="section  section-gap">
-    <div class="container-team">
-    <div class="row align-items-center justify-content-between ">
-    <div class=" col-md-4  align-items-start " data-wow-duration="s" data-wow-delay="s">
-        <div class="bg- p-4  p-xs-3  align-items-start">
-            <div style=" background: url(https://altario-wordpressmedia.s3.eu-west-1.amazonaws.com/wp-content/uploads/2020/03/28233555/lopes-smile-square.jpg) no-repeat; 
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    height: 280px; " class=""></div>
-            <div class="bg- difuse-shadow  p-4  p-xs-3  mb-xs-5 border-bottom border-left border-right  card-img-bottom  align-items-start">
-                <h5 class="text-smart font-weight-600 mb-4 ">Need a Team?</h5>
-                <p class="text-muted font-weight-400 mb-4 ">Need a dynamic team? Then you should talk to me. I’d be glad to discuss your needs with you &amp;help you build a team of top talent to help your business reach its potential.</p>
-                <a href="/cdn-cgi/l/email-protection#d2b3bcb6a0b792b3bea6b3a0fcbbbd" class="
-    btn-altar
-    btn-sm
-    btn-shape--rect
-    btn-fill--outline
-    btn-color--smart text-uppercase ">Email André</a>
-            </div>
-        </div>
-    </div>
-    <div class=" col-md-4  align-items-start " data-wow-duration="s" data-wow-delay="s">
-        <div class="bg- p-4  p-xs-3  align-items-start">
-            <div style=" background: url(https://altario-wordpressmedia.s3.eu-west-1.amazonaws.com/wp-content/uploads/2020/03/28233544/daniel-smile-square.jpg) no-repeat; 
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    height: 280px; " class=""></div>
-            <div class="bg- difuse-shadow  p-4  p-xs-3  mb-xs-5 border-bottom border-left border-right  card-img-bottom  align-items-start">
-                <h5 class="text-smart font-weight-600 mb-4 ">Building an MVP?</h5>
-                <p class="text-muted font-weight-400 mb-4 ">Looking to build fast and reduce your time to market? Drop me a message. Together we can find the core set of features to gather user information and iteratively create the best possible product.</p>
-                <a href="/cdn-cgi/l/email-protection#4e2a2f20272b220e2f223a2f3c602721" class="
-    btn-altar
-    btn-sm
-    btn-shape--rect
-    btn-fill--outline
-    btn-color--smart text-uppercase ">Email Daniel</a>
-            </div>
-        </div>
-    </div>
-    <div class=" col-md-4  align-items-start " data-wow-duration="s" data-wow-delay="s">
-        <div class="bg- p-4  p-xs-3  align-items-start">
-            <div style=" background: url(https://altario-wordpressmedia.s3.eu-west-1.amazonaws.com/wp-content/uploads/2020/03/28233533/claudio-smile-square.jpg) no-repeat; 
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    height: 280px; " class=""></div>
-            <div class="bg- difuse-shadow  p-4  p-xs-3 border-bottom border-left border-right  card-img-bottom  align-items-start">
-                <h5 class="text-smart font-weight-600 mb-4 ">Talk Tech?</h5>
-                <p class="text-muted font-weight-400 mb-4 ">If you want to have a jargon-free tech conversation with someone who speaks your language then drop me a message. I can help you find the right technical requirements for your product.</p>
-                <a href="/cdn-cgi/l/email-protection#ef8c838e9a8b8680c19b8a86978a869d8eaf8e839b8e9dc18680" class="
-    btn-altar
-    btn-sm
-    btn-shape--rect
-    btn-fill--outline
-    btn-color--smart text-uppercase ">Email Claudio</a>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="section  section-gap  pb-0">
-    <div class="container">
-    <div class="row align-items-center justify-content-center ">
-    <div class=" col-md-8 text-center  align-items-start " data-wow-duration="s" data-wow-delay="s"> -->

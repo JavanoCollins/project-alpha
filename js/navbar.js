@@ -21,7 +21,4 @@ var app = new Vue({
         return {
         };
     },
-    created() {
-        console.log(this.services);
-    },
 });

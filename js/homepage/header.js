@@ -18,6 +18,12 @@ const clientImages = [
     "peepx",
 ];
 
+// const servicesDiv = [
+//     softwareSolutions: {
+//         icon: "fas fa-"
+//     }
+// ]
+
 const showHideServiceArrow = () => {
     serviceArrow.classList.toggle("rotateArrow")
 }
@@ -28,7 +34,7 @@ serviceLink.addEventListener("click", () => {
     dropdownMenu.innerHTML = `
                         <div class="service">
                             <i class="fas fa-laptop-code"></i>
-                            <h3>Software Development</h3>
+                            <h3>Software Solutions</h3>
                             <p>
                                 Lorem ipsum, dolor sit amet
                                 consectetur adipisicing.
