@@ -1,12 +1,12 @@
 Vue.component("nav-link", {
-    props: ["title", "link", "dropdown"],
+    props: ["title", "id", "dropdown", "href"],
     template: `<li>
-                <a v-if="!dropdown" href="#" class="nav-link" :id="link">
+                <a v-if="!dropdown" :href="href" class="nav-link" :id="id">
                     {{title}}
                 </a>
                 <div v-if="dropdown" class="dropdown">
                     <div class="service-arrow">
-                        <a href="#" class="dropbtn nav-link" :id="link"
+                        <a href="#" class="dropbtn nav-link" :id="id"
                             >{{title}}</a
                         >
                         <i class="fas fa-chevron-down"></i>
