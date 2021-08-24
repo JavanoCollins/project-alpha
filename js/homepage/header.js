@@ -6,8 +6,6 @@ const serviceArrow = document.querySelector(".fa-chevron-down");
 // Nav Links
 const serviceLink = document.querySelector("#services");
 
-
-
 const clientImages = [
     "sixnfour",
     "limeade",
@@ -18,52 +16,65 @@ const clientImages = [
     "peepx",
 ];
 
-const showHideServiceArrow = () => {
-    serviceArrow.classList.toggle("rotateArrow")
-}
+const services = [
+    (softwareSolutions = {
+        icon: "fab fa-uncharted",
+        title: "Software Solutions",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+        link: "software-solutions",
+        className: "software-sol",
+    }),
+    (webDesign = {
+        icon: "fas fa-drafting-compass",
+        title: "Website Design",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+        className: "web-design",
+    }),
+    (maintenance = {
+        icon: "fas fas fa-wrench",
+        title: "Maintenance",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+        className: "maintenance",
+    }),
+    (ecommerce = {
+        icon: "fas fa-money-check-alt",
+        title: "E-commerce",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+        className: "ecommerce",
+    }),
+    (systemIntegration = {
+        icon: "fas fa-cogs",
+        title: "System Integration",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+        className: "system-int",
+    }),
+];
 
-serviceLink.addEventListener("click", () => {
+const showHideServiceArrow = () => {
+    serviceArrow.classList.toggle("rotateArrow");
+};
+
+const showDropDownMenu = () => {
     dropdownMenu.classList.toggle("show-element");
+
     showHideServiceArrow();
-    dropdownMenu.innerHTML = `
-                        <div class="service">
-                            <i class="fas fa-laptop-code"></i>
-                            <h3>Software Development</h3>
+
+    services.map((service) => {
+        dropdownMenu.innerHTML += `
+                        <div class="service ${service.className}" onclick="location.href='./services/software-development.html'">
+                            <i class=${service.icon}></i>
+                            <h3>${service.title}</h3>
                             <p>
-                                Lorem ipsum, dolor sit amet
-                                consectetur adipisicing.
-                            </p>
-                        </div>
-                        <div class="service">
-                            <h3>System Integration</h3>
-                            <p>
-                                Lorem ipsum, dolor sit amet
-                                consectetur adipisicing.
-                            </p>
-                        </div>
-                        <div class="service">
-                            <h3>Ecommerce</h3>
-                            <p>
-                                Lorem ipsum, dolor sit amet
-                                consectetur adipisicing.
-                            </p>
-                        </div>
-                        <div class="service">
-                            <h3>Maintenance</h3>
-                            <p>
-                                Lorem ipsum, dolor sit amet
-                                consectetur adipisicing.
-                            </p>
-                        </div>
-                        <div class="service">
-                            <h3>Website Design</h3>
-                            <p>
-                                Lorem ipsum, dolor sit amet
-                                consectetur adipisicing.
+                                ${service.description}
                             </p>
                         </div>
     `;
-});
+    });
+};
+
+console.log(services);
+
+serviceLink.addEventListener("click", showDropDownMenu);
 
 // Render client logo images to the client section
 clientImages.map((img) => {
