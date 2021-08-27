@@ -7,11 +7,11 @@ footer {
     padding-bottom: 0;
 }
 
-#footer-1 {
+#footer-1,
+#footer-2 {
     padding: 6rem 6rem;
 }
 
-#footer-2,
 #footer-3 {
     padding: 3rem 6rem;
 }

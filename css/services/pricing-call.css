@@ -1,0 +1,30 @@
+#pricing-call {
+    background-color: #0044FF;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: space-around;
+}
+
+#pricing-call .line {
+    width: 50px;
+    height: 6px;
+    background-color: #FFA0A0;
+    margin-bottom: 20px;
+}
+
+#pricing-call h3 {
+    font-size: 40px;
+    font-family: "Nexa Bold";
+    margin-bottom: 20px;
+}
+
+#pricing-call p {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.call button {
+    color: #0044FF;
+}

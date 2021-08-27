@@ -3,8 +3,10 @@
 
 ### Colors ###
 Dark Blue: rgb(0, 31, 99)
+Medium Blue: #0044FF
 Light Blue: #267CF1
 Light Gray: #8c8c8c
+Orange: #FFA0A0
 Menu Item Background Hover: #0044FF
 
 # Section Background Colors

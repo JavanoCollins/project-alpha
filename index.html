@@ -26,6 +26,7 @@
         <script src="./js/navbar.js" defer></script>
         <script src="./js/footer.js" defer></script>
         <script src="./js/homepage/header.js" defer></script>
+        <script src="./js/homepage/client.js" defer></script>
         <script src="./js/homepage/portfolio.js" defer></script>
 
         <!-- FONT AWESOME -->
@@ -43,29 +44,11 @@
 
     <body>
         <!-- HEADER SECTION -->
-        <section id="showcase-section" class="container">
+        <section id="showcase-section" class="home-showcase container">
             <header id="header" class="">
-                <nav id="navbar" class="container">
-                    <a href="../index.html">
-                        <img
-                            id="logo"
-                            src="../assets/img/home_page/header/logo.png"
-                            alt="Plato Alpha Logo"
-                            width="200"
-                    /></a>
-                    <div class="nav-links">
-                        <nav-link id="work" title="Work"></nav-link>
-                        <nav-link
-                            id="services"
-                            title="Services"
-                            dropdown="true"
-                        ></nav-link>
-                        <nav-link id="about" href="about.html" title="About"></nav-link>
-                        <nav-link id="clients" title="Clients"></nav-link>
-                        <button class="btn btn-call-sm">Book A Call</button>
-                    </div>
-                    <div class="dropdown-content"></div>
-                </nav>
+                <div id="navbar">
+                    <nav-bar></nav-bar>
+                </div>
             </header>
             <video
                 src="./assets/videos/homepage/header/altar-intro-small.mp4"
@@ -88,7 +71,10 @@
         <!-- MAIN SECTION -->
         <main>
             <!-- SERVICES SECTION -->
-            <section id="services-section" class="services-section container section-bg-alt">
+            <section
+                id="services-section"
+                class="services-section container section-bg-alt"
+            >
                 <div class="header-paragraph">
                     <h2 class="section-heading">Services</h2>
                     <p class="section-description">

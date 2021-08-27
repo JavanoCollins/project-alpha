@@ -1,27 +1,39 @@
-Vue.component("nav-link", {
+Vue.component("nav-bar", {
     props: ["title", "id", "dropdown", "href"],
-    template: `<li>
-                <a v-if="!dropdown" :href="href" class="nav-link" :id="id">
-                    {{title}}
-                </a>
-                <div v-if="dropdown" class="dropdown">
-                    <div class="service-arrow">
-                        <a href="#" class="dropbtn nav-link" :id="id"
-                            >{{title}}</a
-                        >
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
+    template: `
+    <nav id="navbar" class="container">
+        <a href="../index.html">
+                        <img
+                            id="logo"
+                            src="../assets/img/home_page/header/logo.png"
+                            alt="Plato Alpha Logo"
+                            width="200"
+        /></a>
+        <div class="nav-links">
+            <a id="work" class="nav-link" href="/work.html">Work</a>
+
+            <div class="dropdown">
+                <div class="service-arrow">
+                    <a class="dropbtn nav-link" id="services" 
+                        >Services</a>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
-            </li>`,
+            </div>
+
+            <a class="nav-link" href="/pricing.html">Pricing</a>
+            
+            <a class="nav-link" href="/about.html">About Us</a>
+
+            <button class="btn btn-call-sm">Book A Call</button>
+        </div>
+        <div class="dropdown-content"></div>
+    </nav>
+    `,
 });
 
 var app = new Vue({
     el: "#navbar",
     data: () => {
-        return {
-        };
-    },
-    created() {
-        console.log(this.services);
+        return {};
     },
 });
