@@ -18,6 +18,8 @@ Footer 1: #21212B
 Footer 2: #1D1D25
 Footer 3: #15151F
 
+Drop Shadow: box-shadow: 0 42px 64px 0 #e7e7ec;
+
 ### Fonts ###
 
 

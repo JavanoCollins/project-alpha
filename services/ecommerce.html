@@ -17,16 +17,17 @@
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/homepage/header.css" />
         <link rel="stylesheet" href="../css/homepage/footer.css" />
+        <link rel="stylesheet" href="../css/services/service.css" />
         <link
             rel="stylesheet"
             href="./../css/services/software-solutions.css"
         />
-        <link rel="stylesheet" href="../css/services/pricing-call.css" />
 
         <!-- JAVASCRIPT IMPORTS -->
         <script src="./../js/navbar.js" defer></script>
         <script src="../js/footer.js" defer></script>
         <script src="./../js/homepage/header.js" defer></script>
+        <script src="./../js/services/service.js" defer></script>
 
         <!-- FONT AWESOME -->
         <script
@@ -38,8 +39,8 @@
     </head>
     <body>
         <!-- HEADER  SECTION-->
-        <section id="showcase-section" class="software-showcase container">
-            <header id="header" class="software-header">
+        <section id="showcase-section" class="service-showcase container">
+            <header id="header" class="service-header">
                 <div id="navbar">
                     <nav-bar></nav-bar>
                 </div>
@@ -86,6 +87,13 @@
                     </p>
                     <button class="btn-lg-white">Book A Call</button>
                 </div>
+            </section>
+
+            <!-- OTHER SERVICES -->
+            <section id="other-services-section">
+                <h3 class="section-heading">Other Services We Offer</h3>
+                <!-- Dynamically render other services in service.js -->
+                <div class="other-services ecommerce-services"></div>
             </section>
         </main>
 

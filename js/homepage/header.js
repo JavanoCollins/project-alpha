@@ -53,19 +53,16 @@ services.map((service) => {
     `;
 });
 
-const showHideServiceArrow = () => {
-    serviceArrow.classList.toggle("rotateArrow");
-};
-
 const toggleDropDownMenu = (e) => {
     if (e.target.classList.contains("dropbtn")) {
         console.log(e);
+        serviceArrow.classList.toggle("rotateArrow");
         dropdownMenu.classList.toggle("show-element");
     } else {
         dropdownMenu.classList.remove("show-element")
+        serviceArrow.classList.remove("rotateArrow");
     }
-    showHideServiceArrow();
 };
 
-document.body.addEventListener("click", toggleDropDownMenu);
+document.body.addEventListener("click", toggleDropDownMenu)
 // serviceLink.addEventListener("click", toggleDropDownMenu);

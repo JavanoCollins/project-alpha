@@ -17,16 +17,17 @@
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/homepage/header.css" />
         <link rel="stylesheet" href="../css/homepage/footer.css" />
+        <link rel="stylesheet" href="../css/services/service.css" />
         <link
             rel="stylesheet"
             href="./../css/services/software-solutions.css"
         />
-        <link rel="stylesheet" href="../css/services/pricing-call.css" />
 
         <!-- JAVASCRIPT IMPORTS -->
         <script src="./../js/navbar.js" defer></script>
         <script src="../js/footer.js" defer></script>
         <script src="./../js/homepage/header.js" defer></script>
+        <script src="./../js/services/service.js" defer></script>
 
         <!-- FONT AWESOME -->
         <script
@@ -34,12 +35,12 @@
             crossorigin="anonymous"
         ></script>
 
-        <title>Plato Alpha | Maintenance</title>
+        <title>Plato Alpha | Web Design</title>
     </head>
     <body>
         <!-- HEADER  SECTION-->
-        <section id="showcase-section" class="software-showcase container">
-            <header id="header" class="software-header">
+        <section id="showcase-section" class="service-showcase container">
+            <header id="header" class="service-header">
                 <div id="navbar">
                     <nav-bar></nav-bar>
                 </div>
@@ -66,20 +67,33 @@
         </section>
 
         <main>
-             <!-- PRICING & BOOK A CALL SECTION -->
+            <!-- PRICING & BOOK A CALL SECTION -->
             <section id="pricing-call" class="container">
                 <div class="pricing">
                     <div class="line"></div>
                     <h3>Take the Price Simulator for a Spin</h3>
-                    <p>Play with our pricing simulator and try to understand your project size.</p>
+                    <p>
+                        Play with our pricing simulator and try to understand
+                        your project size.
+                    </p>
                     <button class="btn-lg-white-alt">See Our Pricing</button>
                 </div>
                 <div class="call">
                     <div class="line"></div>
                     <h3>Start building your product</h3>
-                    <p>Book a call with a product expert to evaluate your project.</p>
+                    <p>
+                        Book a call with a product expert to evaluate your
+                        project.
+                    </p>
                     <button class="btn-lg-white">Book A Call</button>
                 </div>
+            </section>
+
+            <!-- OTHER SERVICES -->
+            <section id="other-services-section">
+                <h3 class="section-heading">Other Services We Offer</h3>
+                <!-- Dynamically render other services in service.js -->
+                <div class="other-services maintenance-services"></div>
             </section>
         </main>
 
