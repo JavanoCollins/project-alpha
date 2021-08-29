@@ -1,28 +1,17 @@
 // --- DOM Selectors ---
-const clientsImgContainer = document.querySelector(".clients-img-container");
 const dropdownMenu = document.querySelector(".dropdown-content");
 const serviceArrow = document.querySelector(".fa-chevron-down");
 
 // Nav Links
 const serviceLink = document.querySelector("#services");
 
-const clientImages = [
-    "sixnfour",
-    "limeade",
-    "edls-logo",
-    "bahamas-government",
-    "rev",
-    "jll",
-    "peepx",
-];
-
+// Services Links
 const services = [
     (softwareSolutions = {
         icon: "fab fa-uncharted",
         title: "Software Solutions",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-        link: "software-solutions",
-        className: "software-sol",
+        className: "software-solutions",
     }),
     (webDesign = {
         icon: "fas fa-drafting-compass",
@@ -46,37 +35,34 @@ const services = [
         icon: "fas fa-cogs",
         title: "System Integration",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-        className: "system-int",
+        className: "system-integration",
     }),
 ];
 
-const showHideServiceArrow = () => {
-    serviceArrow.classList.toggle("rotateArrow");
-};
-
-const showDropDownMenu = () => {
-    dropdownMenu.classList.toggle("show-element");
-
-    showHideServiceArrow();
-
-    services.map((service) => {
-        dropdownMenu.innerHTML += `
-                        <div class="service ${service.className}" onclick="location.href='./services/software-development.html'">
-                            <i class=${service.icon}></i>
-                            <h3>${service.title}</h3>
+services.map((service) => {
+    dropdownMenu.innerHTML += `
+                        <div class="service ${service.className}" onclick="location.href='/services/${service.className}.html'">
+                            <div class="service-icon-container">
+                                <i class="${service.icon}"></i>
+                                <h3>${service.title}</h3>
+                            </div>
                             <p>
                                 ${service.description}
                             </p>
                         </div>
     `;
-    });
+});
+
+const toggleDropDownMenu = (e) => {
+    if (e.target.classList.contains("dropbtn")) {
+        console.log(e);
+        serviceArrow.classList.toggle("rotateArrow");
+        dropdownMenu.classList.toggle("show-element");
+    } else {
+        dropdownMenu.classList.remove("show-element")
+        serviceArrow.classList.remove("rotateArrow");
+    }
 };
 
-console.log(services);
-
-serviceLink.addEventListener("click", showDropDownMenu);
-
-// Render client logo images to the client section
-clientImages.map((img) => {
-    return (clientsImgContainer.innerHTML += `<img class="client-img ${img}" src="../../assets/img/home_page/clients/${img}.png">`);
-});
+document.body.addEventListener("click", toggleDropDownMenu)
+// serviceLink.addEventListener("click", toggleDropDownMenu);

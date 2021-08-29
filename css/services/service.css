@@ -1,0 +1,83 @@
+/* OTHER SERVICES */
+#other-services-section {
+    background-color: #F7F9FD;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.other-services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 3rem;
+}
+.other-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 42px 64px 0 #e7e7ec;
+    padding: 3rem 2rem;
+    height: 280px;
+    transition: all .3s;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #fff;
+    /* border: transparent; */
+}
+
+.other-service:hover {
+    box-shadow: none;
+    transform: translateY(-10px);
+    transition: all .3s;
+}
+
+.other-service i {
+    color: #0044ff;
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.other-service h3 {
+    font-size: 24px;
+    font-family: "Nexa Bold";
+    margin-bottom: 16px;
+}
+
+.other-service p {
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+/* PRICING & BOOK A CALL */
+#pricing-call {
+    background-color: #0044ff;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: space-around;
+}
+
+#pricing-call .line {
+    width: 50px;
+    height: 6px;
+    background-color: #ffa0a0;
+    margin-bottom: 20px;
+}
+
+#pricing-call h3 {
+    font-size: 40px;
+    font-family: "Nexa Bold";
+    margin-bottom: 20px;
+}
+
+#pricing-call p {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.call button {
+    color: #0044ff;
+}
