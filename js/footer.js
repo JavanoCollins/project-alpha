@@ -6,7 +6,7 @@ Vue.component("footer-component", {
                     <div class="footer-1-col-1">
                         <img
                             id="footer-1-logo"
-                            src="./assets/img/plato-alpha-imgs/plato-alpha-transparent.png
+                            src="../assets/img/plato-alpha-imgs/plato-alpha-transparent.png
                         "
                             alt="Plato Alpha Logo"
                         />
@@ -18,7 +18,7 @@ Vue.component("footer-component", {
                     </div>
 
                     <div class="footer-1-col-2">
-                        <img id="bahamas-img" src="./assets/img/home_page/footer/bahamas.png" alt="">
+                        <img id="bahamas-img" src="../assets/img/home_page/footer/bahamas.png" alt="">
                         <div id="line"></div>
                         <ul>
                             <li>HEADQUARTERS</li>

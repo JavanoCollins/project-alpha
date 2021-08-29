@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="../assets/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <!-- VUE IMPORT -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+        <!-- CSS IMPORTS -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/homepage/header.css" />
+         <link rel="stylesheet" href="../css/homepage/footer.css" />
+
+        <!-- JAVASCRIPT IMPORTS -->
+        <script src="../js/navbar.js" defer></script>
+        <script src="../js/footer.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <section id="showcase-section" class="container">
+            <header id="header" class="">
+                <nav id="navbar" class="container">
+                    <a href="../index.html">
+                        <img
+                            id="logo"
+                            src="../assets/img/home_page/header/logo.png"
+                            alt="Plato Alpha Logo"
+                            width="200"
+                    /></a>
+                    <div class="nav-links">
+                        <nav-link link="work" title="Work"></nav-link>
+                        <nav-link
+                            link="services"
+                            title="Services"
+                            dropdown="true"
+                        ></nav-link>
+                        <nav-link link="about" title="About"></nav-link>
+                        <nav-link link="clients" title="Clients"></nav-link>
+                        <button class="btn btn-call-sm">Book A Call</button>
+                    </div>
+                    <div class="dropdown-content"></div>
+                </nav>
+            </header>
+        </section>
+
+        <!-- FOOTER -->
+        <section id="footer-section">
+            <div id="footer-component">
+                <footer-component id="footer"></footer-component>
+            </div>
+        </section>
+    </body>
+</html>
